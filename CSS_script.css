@@ -1,0 +1,319 @@
+ .hover_color {
+     background-color: #90ee90 !important;
+ }
+
+ .spoiler_body {
+     font-style: italic;
+     text-align: center;
+     background: #5757a0;
+     color: #fcfeff;
+     display: none;
+     cursor: pointer;
+ }
+
+
+
+.image {
+	margin:30px; 
+	cursor:pointer;
+	max-height:100px;
+}
+
+.popup {
+	position: absolute;
+	height:100%;
+	width:100%;
+	top:0;
+	left:0;
+	display:none;
+	text-align:center;
+}
+
+.popup_bg {
+	background:rgba(0,0,0,0.4);
+	position:absolute;
+	z-index:1;
+	height:100%;
+	width:100%;
+}
+
+
+.popup_img {
+	position: relative;
+	margin:0 auto;
+	z-index:2;
+	max-height:94%;
+	max-width:94%;
+	margin:1% 0 0 0;
+}
+
+.close {
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 1px rgba(255,255,255,.2), 0 -1px rgba(0,0,0,.8);
+  outline: none;
+  border: none;
+  border-radius: 100px;
+  background: #5757a0 radial-gradient(150% 100% at 50% 5px, rgba(255,255,255,.2), rgba(0,0,0,0));
+  box-shadow: inset rgba(0,0,0,.6) 0 -2px 5px, inset rgba(252,255,255,.7) 0 2px 5px, rgba(0,0,0,.8) 0 2px 5px -1px;
+  color: #5757a0;
+  user-select: none;
+} 
+.close:hover {
+  color: rgb(0,59,66);
+  cursor: pointer;
+}
+.close:active {
+  padding-bottom: 1px;
+  box-shadow:
+   inset rgba(0,0,0,1) 0 1px 3px,
+   inset rgba(0,0,0,.6) 0 -2px 5px,
+   inset rgba(252,255,255,.7) 0 2px 5px,
+   0 1px rgba(255,255,255,.08);
+  color: #5757a0;
+}
+
+
+
+
+
+
+
+body {
+	margin:0;
+	text-align:center;
+}
+
+	body .slider {
+		overflow:hidden; /* Скрываем всё что за блоком слайдера */
+		position:relative;
+		width:800px;
+		height:500px;
+		margin:0 auto;
+	}
+	
+		body .slider .slides {
+			position:relative;
+			transition:1s; /* Задаем время изменения блока, отвечает за плавную прокрутку */
+		}
+		
+			body .slider .slides .slide {
+				float:left;
+				display:block;
+			}
+			
+			body .slider .slides .slide img{
+				width:800px;
+				height:500px;
+			}
+			
+		body .slider .next {
+			position:absolute;
+			height:50px;
+			width:50px;
+			background:#5757a0;
+			right:0;
+			top:225px;
+			z-index:1;
+			cursor:pointer;
+		}
+		
+		body .slider .prev {
+			position:absolute;
+			height:50px;
+			width:50px;
+			background:#5757a0;
+			left:0;
+			top:225px;
+			z-index:1;
+			cursor:pointer;
+		}
+
+
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+form {
+  border: 1px solid #c6c7cc;
+  border-radius: 5px;
+  font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow: hidden;
+     float: center;
+  width: 240px;
+}
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+input {
+  border-radius: 5px;
+  font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+textarea {
+
+  border-radius: 5px;
+  font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+.account-info {
+  padding: 20px 20px 0 20px;
+}
+.account-info label {
+  color: #5757a0;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.account-info input {
+  background: #fff;
+  border: 1px solid #c6c7cc;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .1);
+  color: #636466;
+  padding: 6px;
+  margin-top: 6px;
+  width: 100%;
+}
+.account-action {
+  background: #5757a0;
+  border-top: 1px solid #c6c7cc;
+  padding: 20px;
+}
+.account-action .btn {
+  background: linear-gradient(#5757a0);
+  border: 0;
+  cursor: pointer;
+  font-weight: bold;
+  float: center;
+  padding: 8px 16px;
+}
+.account-action label {
+  color: #7c7c80;
+  font-size: 12px;
+  float: center;
+  margin: 10px 0 0 20px;
+}
+
+
+.carousel-hider {
+    width: 600px;
+    overflow: hidden;
+    float: left;
+}
+ 
+.carousel-list {    
+    list-style: none;
+    width: 10000px;
+}
+ 
+.carousel-element {
+    display: block;
+    margin-right: 25px;
+    float: left;
+}
+ 
+.carousel-element img {
+    max-width: 100px;
+}
+ 
+.carousel-arrow-left, .carousel-arrow-right {
+    float: left;
+}
+
+.carousel-list {    
+    list-style: none;
+    width: 10000px;
+    padding: 0px;
+    position: relative;
+}
+.carousel-arrow-left, .carousel-arrow-right {
+    float: left;
+    display: block;
+    border: 1px solid grey;
+    background-color: lightgrey;
+    padding: 5px;
+    margin-top: 50px;
+}
+ 
+.carousel-arrow-left:hover, .carousel-arrow-right:hover {
+    cursor: pointer;
+    background-color: grey;
+}
+ 
+.carousel-arrow-left {
+    margin-right: 25px;
+}
+ 
+.carousel-arrow-right {
+    margin-left: 25px;
+}
+
+
+.minimized {
+  width: 300px;
+  cursor: pointer;
+  border: 1px solid #FFF;
+}
+ 
+.minimized:hover {
+  border: 1px solid yellow;
+}
+ 
+#magnify {
+  display: none;
+ 
+  position: fixed;
+  max-width: 600px;
+  height: auto;
+  z-index: 9999;
+}
+ 
+#magnify img {
+  width: 100%;
+}
+ 
+
+#overlay {
+  display: none;
+ 
+  background: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+  z-index: 9990;
+}
+ 
+/* кнопка закрытия */
+#close-popup {
+  width: 30px;
+  height: 30px;
+ 
+  background: #FFFFFF;
+  border: 1px solid #AFAFAF;
+  border-radius: 15px;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: 2px solid black;
+}
+ 
+#close-popup i {
+  width: 30px;
+  height: 30px;
+  background: url(http://s1.iconbird.com/ico/2013/10/464/w512h5121380984637delete1.png) no-repeat center center;
+  background-size: 30px 30px;
+  display: block;
+}
